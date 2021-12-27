@@ -9,6 +9,9 @@
 * `Django REST Framework` > 3.0
 * `VSCode`
 * `SQLite3`
+* `REST API`
+* `HTTP`
+* `JSON`
 
 ## Лицензия
 

@@ -1,0 +1,32 @@
+[
+    {
+        "model": "usersapp.user",
+        "pk": "d7fce8c8-c03b-4758-a996-2dc4966d0387",
+        "fields": {
+            "username": "user001",
+            "first_name": "Ivan",
+            "last_name": "Ivanov",
+            "email": "user001@mail.ru"
+        }
+    },
+    {
+        "model": "usersapp.user",
+        "pk": "62ca3912-3fde-4d85-87fa-f2683df12288",
+        "fields": {
+            "username": "user002",
+            "first_name": "Petr",
+            "last_name": "Petrov",
+            "email": "user002@mail.ru"
+        }
+    },
+    {
+        "model": "usersapp.user",
+        "pk": "2ded7453-00d3-470a-98a1-35f60cad12b7",
+        "fields": {
+            "username": "user003",
+            "first_name": "Sergey",
+            "last_name": "Sergeev",
+            "email": "user003@mail.ru"
+        }
+    }
+]
