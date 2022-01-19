@@ -1,5 +1,6 @@
 from django_filters import rest_framework as filters
-from .models import Project, TODO
+
+from .models import TODO, Project
 
 
 class ProjectFilter(filters.FilterSet):
@@ -11,7 +12,6 @@ class ProjectFilter(filters.FilterSet):
 
 
 class TODOFilter(filters.FilterSet):
-
     class Meta:
         model = TODO
         fields = ["project"]
