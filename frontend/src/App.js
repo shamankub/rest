@@ -3,8 +3,20 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import UserList from './components/User.js'
-import MenuList from './components/menu.js'
-import Footer from './components/footer.js'
+import MenuList from './components/Menu.js'
+import Footer from './components/Footer.js'
+import ProjectList from './components/Project.js'
+import TODOList from './components/TODO.js'
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
+
+
+const NotFound404 = ({ location }) => {
+  return (
+    <div>
+      <h1>Страница по адресу '{location.pathname}' не найдена</h1>
+    </div>
+  )
+}
 
 
 class App extends React.Component {
@@ -13,33 +25,55 @@ class App extends React.Component {
     super(props)
     this.state = {
       'users': [],
-      'menu': []
+      'menu': [],
+      'projects': [],
+      'todos': [],
     }
   }
 
   componentDidMount() {
     const menu = [
       {
-        'name': 'главная',
-        'url': 'http://127.0.0.1:8000/'
+        'title': 'Пользователи',
+        'link': '/'
       },
       {
-        'name': 'api',
-        'url': 'http://127.0.0.1:8000/api'
+        'title': 'Проекты',
+        'link': '/projects'
       },
       {
-        'name': 'админка',
-        'url': 'http://127.0.0.1:8000/admin'
-      }
+        'title': 'TODO',
+        'link': '/TODO'
+      },
     ]
 
-    axios.get('http://127.0.0.1:8000/api/users')
+    axios.get('http://127.0.0.1:8000/api/users/')
       .then(response => {
-        const users = response.data
+        const users = response.data.results
         this.setState(
           {
             'users': users,
             'menu': menu
+          }
+        )
+      }).catch(error => console.log(error))
+
+    axios.get('http://127.0.0.1:8000/api/projects/')
+      .then(response => {
+        const projects = response.data.results
+        this.setState(
+          {
+            'projects': projects,
+          }
+        )
+      }).catch(error => console.log(error))
+
+    axios.get('http://127.0.0.1:8000/api/todos/')
+      .then(response => {
+        const todos = response.data.results
+        this.setState(
+          {
+            'todos': todos,
           }
         )
       }).catch(error => console.log(error))
@@ -48,15 +82,23 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div>
-          <MenuList menu={this.state.menu} />
-        </div>
-        <div>
-          <UserList users={this.state.users} />
-        </div>
-        <div>
-          <Footer />
-        </div>
+        <BrowserRouter>
+          <div>
+            <MenuList menu={this.state.menu} />
+          </div>
+          <div>
+            <Switch>
+              <Route exact path='/' component={() => <UserList users={this.state.users} />} />
+              <Route exact path='/projects' component={() => <ProjectList projects={this.state.projects} />} />
+              <Route exact path='/TODO' component={() => <TODOList todos={this.state.todos} />} />
+              <Redirect from='/users' to='/' />
+              <Route component={NotFound404} />
+            </Switch>
+          </div>
+          <div>
+            <Footer />
+          </div>
+        </BrowserRouter>
       </div>
     )
   }

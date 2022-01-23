@@ -1,19 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
-/*const Menu = () => {
-    return (
-        <p class="menu">
-            MENU
-        </p>
-    )
-}
-
-
-export default Menu;*/
 const MenuItem = ({ item }) => {
     return (
-        <li><a href="{item.url}">{item.name}</a></li>
+        <li><Link to={item.link}>{item.title}</Link></li>
     )
 }
 
