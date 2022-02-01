@@ -6,7 +6,7 @@ from rest_framework.viewsets import ModelViewSet
 
 from .filters import ProjectFilter, TODOFilter
 from .models import TODO, Project
-from .serializers import ProjectSerializer, TODOSerializer
+from .serializers import ProjectSerializer, TODOSerializer, TODOSerializerBase
 
 
 class ProjectPageNumberPagination(PageNumberPagination):
@@ -35,3 +35,8 @@ class TODOViewSet(ModelViewSet):
         item.is_active = False
         item.save()
         return Response(status=status.HTTP_200_OK)
+
+    def get_serializer_class(self):
+        if self.request.method in ["GET"]:
+            return TODOSerializer
+        return TODOSerializerBase
