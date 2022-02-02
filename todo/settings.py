@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "todoapp",
     "django_filters",
+    "drf_yasg",
 ]
 
 # Auth model
