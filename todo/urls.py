@@ -31,4 +31,8 @@ urlpatterns = [
     path("api-auth/", include("rest_framework.urls")),
     path("api-token-auth/", views.obtain_auth_token),
     path("api/", include(router.urls)),
+    path("api/v<str:version>/users/",
+         UserCustomViewSet.as_view({"get": "list"})),
+    # path("api/users/0.1", include("usersapp.urls", namespace="0.1")),
+    # path("api/users/0.2", include("usersapp.urls", namespace="0.2")),
 ]
