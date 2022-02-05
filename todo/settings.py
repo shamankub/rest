@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "todoapp",
     "django_filters",
     "drf_yasg",
+    "graphene_django",
 ]
 
 # Auth model
@@ -150,4 +151,8 @@ REST_FRAMEWORK = {
     ],
     "DEFAULT_VERSIONING_CLASS": "rest_framework.versioning.URLPathVersioning",
     # "DEFAULT_VERSIONING_CLASS": "rest_framework.versioning.NamespaceVersioning",
+}
+
+GRAPHENE = {
+    "SCHEMA": "todo.schema.schema"
 }
