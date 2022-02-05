@@ -1,5 +1,6 @@
 import graphene
 from graphene_django import DjangoObjectType
+
 from todoapp.models import TODO, Project
 from usersapp.models import User
 
@@ -27,10 +28,8 @@ class Query(graphene.ObjectType):
     all_projects = graphene.List(ProjectType)
     all_users = graphene.List(UserType)
     project_by_id = graphene.Field(ProjectType, id=graphene.Int(required=True))
-    todo_by_project_id = graphene.List(
-        TODOType, id=graphene.Int(required=False))
-    user_is_staff = graphene.List(
-        UserType, flag=graphene.Boolean(required=False))
+    todo_by_project_id = graphene.List(TODOType, id=graphene.Int(required=False))
+    user_is_staff = graphene.List(UserType, flag=graphene.Boolean(required=False))
 
     def resolve_all_todos(root, info):
         return TODO.objects.all()

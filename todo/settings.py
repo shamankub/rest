@@ -153,6 +153,4 @@ REST_FRAMEWORK = {
     # "DEFAULT_VERSIONING_CLASS": "rest_framework.versioning.NamespaceVersioning",
 }
 
-GRAPHENE = {
-    "SCHEMA": "todo.schema.schema"
-}
+GRAPHENE = {"SCHEMA": "todo.schema.schema"}
