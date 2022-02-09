@@ -1,0 +1,41 @@
+{
+  allTodos{
+    id
+    text
+    project {
+      name
+    }
+    isActive
+    creator {
+      username
+    }
+  }
+
+  allUsers{
+    username
+    firstName
+    lastName
+    email
+    todoSet{
+      id
+      text
+    }
+    projectSet{
+      id
+      name
+    }
+  }
+
+  projectById(id: 1){
+    id
+    name
+  }
+
+  todoByProjectId(id: 1){
+    text
+  }
+
+  userIsStaff(flag: true){
+    username
+  }
+}
