@@ -1,0 +1,293 @@
+[
+    {
+        "model": "auth.group",
+        "pk": 1,
+        "fields": {
+            "name": "\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a\u0438",
+            "permissions": [
+                28,
+                29,
+                30,
+                31,
+                32,
+                24
+            ]
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 2,
+        "fields": {
+            "name": "\u0412\u043b\u0430\u0434\u0435\u043b\u044c\u0446\u044b \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432",
+            "permissions": [
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                24
+            ]
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 3,
+        "fields": {
+            "name": "\u0410\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0442\u043e\u0440\u044b",
+            "permissions": [
+                1,
+                2,
+                3,
+                4,
+                9,
+                10,
+                11,
+                12,
+                5,
+                6,
+                7,
+                8,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                21,
+                22,
+                23,
+                24
+            ]
+        }
+    },
+    {
+        "model": "usersapp.user",
+        "pk": "27e65921-12d5-4c89-8349-53f08894799e",
+        "fields": {
+            "password": "pbkdf2_sha256$150000$CuyFJRPssbz2$XhCdCKDfk2dlyC9Mr23uxUgfUlyNHYVmRxFgoNSwIy8=",
+            "last_login": "2022-01-27T18:36:03.451Z",
+            "is_superuser": false,
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-01-27T18:20:04Z",
+            "username": "shamankub",
+            "first_name": "\u0410\u043d\u0442\u043e\u043d",
+            "last_name": "\u0415\u0441\u0435\u043d\u0435\u0435\u0432",
+            "email": "shaman_kub@mail.ru",
+            "groups": [
+                2
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "usersapp.user",
+        "pk": "2ded7453-00d3-470a-98a1-35f60cad12b7",
+        "fields": {
+            "password": "pbkdf2_sha256$150000$CuyFJRPssbz2$XhCdCKDfk2dlyC9Mr23uxUgfUlyNHYVmRxFgoNSwIy8=",
+            "last_login": "2022-02-02T09:24:39.654Z",
+            "is_superuser": false,
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-12-25T21:50:34Z",
+            "username": "user003",
+            "first_name": "Sergey",
+            "last_name": "Sergeev",
+            "email": "user003@mail.ru",
+            "groups": [
+                3
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "usersapp.user",
+        "pk": "62ca3912-3fde-4d85-87fa-f2683df12288",
+        "fields": {
+            "password": "pbkdf2_sha256$150000$CuyFJRPssbz2$XhCdCKDfk2dlyC9Mr23uxUgfUlyNHYVmRxFgoNSwIy8=",
+            "last_login": "2022-02-02T09:29:31.417Z",
+            "is_superuser": false,
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-12-25T21:50:34Z",
+            "username": "user002",
+            "first_name": "Petr",
+            "last_name": "Petrov",
+            "email": "user002@mail.ru",
+            "groups": [
+                2
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "usersapp.user",
+        "pk": "d7fce8c8-c03b-4758-a996-2dc4966d0387",
+        "fields": {
+            "password": "pbkdf2_sha256$150000$CuyFJRPssbz2$XhCdCKDfk2dlyC9Mr23uxUgfUlyNHYVmRxFgoNSwIy8=",
+            "last_login": "2022-02-02T09:25:44.440Z",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2021-12-25T21:50:34Z",
+            "username": "user001",
+            "first_name": "Ivan",
+            "last_name": "Ivanov",
+            "email": "user001@mail.ru",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "usersapp.user",
+        "pk": "f8b7fa45-f613-409f-baee-b1b90a83ceac",
+        "fields": {
+            "password": "pbkdf2_sha256$150000$CuyFJRPssbz2$XhCdCKDfk2dlyC9Mr23uxUgfUlyNHYVmRxFgoNSwIy8=",
+            "last_login": "2022-02-02T10:13:45.446Z",
+            "is_superuser": true,
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2021-12-25T21:47:47Z",
+            "username": "admin",
+            "first_name": "\u0410\u043d\u0442\u043e\u043d",
+            "last_name": "\u0415\u0441\u0435\u043d\u0435\u0435\u0432",
+            "email": "admin@mail.ru",
+            "groups": [
+                3
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "todoapp.project",
+        "pk": 2,
+        "fields": {
+            "name": "todo1",
+            "repository": "http://fhfghdgfsfgfgjdsfjhgj.ru",
+            "users": [
+                "f8b7fa45-f613-409f-baee-b1b90a83ceac"
+            ]
+        }
+    },
+    {
+        "model": "todoapp.project",
+        "pk": 3,
+        "fields": {
+            "name": "todo2",
+            "repository": "http://fhfghdfjhgj.ru",
+            "users": [
+                "62ca3912-3fde-4d85-87fa-f2683df12288"
+            ]
+        }
+    },
+    {
+        "model": "todoapp.project",
+        "pk": 8,
+        "fields": {
+            "name": "todo3",
+            "repository": "http://fhfghdfjhgj.ru",
+            "users": [
+                "62ca3912-3fde-4d85-87fa-f2683df12288"
+            ]
+        }
+    },
+    {
+        "model": "todoapp.todo",
+        "pk": 3,
+        "fields": {
+            "project": 2,
+            "text": "jh jdy yru y",
+            "created": "2022-02-11T19:31:54.888Z",
+            "updated": "2022-02-11T19:31:54.888Z",
+            "creator": "f8b7fa45-f613-409f-baee-b1b90a83ceac",
+            "is_active": true
+        }
+    },
+    {
+        "model": "todoapp.todo",
+        "pk": 4,
+        "fields": {
+            "project": 2,
+            "text": "jh u yhmc hj yt uyu",
+            "created": "2022-02-11T19:31:59.206Z",
+            "updated": "2022-02-11T19:31:59.206Z",
+            "creator": "f8b7fa45-f613-409f-baee-b1b90a83ceac",
+            "is_active": true
+        }
+    },
+    {
+        "model": "todoapp.todo",
+        "pk": 5,
+        "fields": {
+            "project": 3,
+            "text": "m hcjk hjk chgj dt tyu",
+            "created": "2022-02-11T19:32:08.280Z",
+            "updated": "2022-02-11T19:32:08.280Z",
+            "creator": "d7fce8c8-c03b-4758-a996-2dc4966d0387",
+            "is_active": true
+        }
+    },
+    {
+        "model": "todoapp.todo",
+        "pk": 6,
+        "fields": {
+            "project": 3,
+            "text": "bhghjfuj",
+            "created": "2022-02-11T20:26:15.332Z",
+            "updated": "2022-02-11T20:26:15.332Z",
+            "creator": "d7fce8c8-c03b-4758-a996-2dc4966d0387",
+            "is_active": true
+        }
+    },
+    {
+        "model": "todoapp.todo",
+        "pk": 7,
+        "fields": {
+            "project": 2,
+            "text": "jhdjyj",
+            "created": "2022-02-11T20:28:04.728Z",
+            "updated": "2022-02-11T20:28:04.728Z",
+            "creator": "27e65921-12d5-4c89-8349-53f08894799e",
+            "is_active": true
+        }
+    },
+    {
+        "model": "authtoken.token",
+        "pk": "a3a24c8790fe36d298c42b1bc4e68b9f1eeab3d4",
+        "fields": {
+            "user": "d7fce8c8-c03b-4758-a996-2dc4966d0387",
+            "created": "2022-01-23T22:01:59.665Z"
+        }
+    },
+    {
+        "model": "authtoken.token",
+        "pk": "f8e34ffc0e4e8f02e8e14bba0142e082513ee759",
+        "fields": {
+            "user": "f8b7fa45-f613-409f-baee-b1b90a83ceac",
+            "created": "2022-01-30T14:25:55.053Z"
+        }
+    }
+]
